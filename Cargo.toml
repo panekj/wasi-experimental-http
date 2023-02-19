@@ -8,10 +8,10 @@
     anyhow = "1.0"
     futures = "0.3"
     http = "0.2"
-    reqwest = { version = "0.11", default-features = true, features = [
+    reqwest = { default-features = true, features = [
         "json",
         "blocking",
-    ] }
+    ], git = "https://github.com/panekj/reqwest.git", rev = "738bdc07464186c930252f5220af8e95c16b22ff" }
     structopt = "0.3"
     tokio = { version = "1.4", features = [ "full" ] }
     wasmtime = "1.0.0"
