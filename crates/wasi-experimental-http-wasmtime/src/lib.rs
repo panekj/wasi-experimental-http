@@ -344,7 +344,7 @@ impl HttpState {
         Ok(HttpState { state })
     }
 
-    pub fn add_to_linker<T>(
+    pub fn add_to_linker<T: 'static>(
         &self,
         linker: &mut Linker<T>,
         get_cx: impl Fn(&T) -> HttpCtx + Send + Sync + 'static,
